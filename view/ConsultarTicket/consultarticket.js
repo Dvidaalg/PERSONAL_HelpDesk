@@ -331,7 +331,7 @@ function listardatatable(tick_titulo,cat_id,prio_id,est_id){
                 'pdfHtml5'
                 ],
         "ajax":{
-            url: './controller/ticket.php?op=listar_filtro',
+            url: '../../controller/ticket.php?op=listar_filtro',
             type : "post",
             dataType : "json",
             data:{ tick_titulo:tick_titulo,cat_id:cat_id,prio_id:prio_id,est_id:est_id},
