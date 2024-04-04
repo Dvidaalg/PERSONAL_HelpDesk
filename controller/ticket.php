@@ -407,6 +407,7 @@
                 "aaData"=>$data);
             echo json_encode($results);
             break; 
+
         case "listardetalle":
             $datos=$ticket->listar_ticketdetalle_x_ticket($_POST["tick_id"]);
             ?>
