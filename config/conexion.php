@@ -23,7 +23,7 @@
 
         public static function ruta(){
             //Local
-            return "http://localhost:80/";
+            return "http://192.168.1.170/";
 
 		}
 
