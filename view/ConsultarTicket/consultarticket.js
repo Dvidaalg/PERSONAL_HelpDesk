@@ -334,9 +334,13 @@ function listardatatable(tick_titulo,cat_id,prio_id){
             url: '../../controller/ticket.php?op=listar_filtro',
             type : "post",
             dataType : "json",
-            data:{ tick_titulo:tick_titulo,cat_id:cat_id,prio_id:prio_id},
-            error: function(e){
-                console.log(e.responseText);
+           
+            data:{ tick_titulo: tick_titulo,cat_id: cat_id,prio_id: prio_id},
+            error: function (xhr, textStatus, errorThrown) {
+                console.log("Error en la petición AJAX:");
+                console.log(xhr);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         },
         "bDestroy": true,
