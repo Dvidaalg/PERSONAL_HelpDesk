@@ -147,8 +147,7 @@ $(document).ready(function(){
     var tick_titulo = $('#tick_titulo').val();
     var cat_id = $('#cat_id').val();
     var prio_id = $('#prio_id').val();
-    var est_id = $('#est_id').val();
-    listardatatable(tick_titulo,cat_id,prio_id,est_id);
+    listardatatable(tick_titulo,cat_id,prio_id);
     }else if(rol_id==3){
         
         var emp_id=  $('#emp_idx').val();
