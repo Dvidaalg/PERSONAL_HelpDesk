@@ -316,7 +316,7 @@ $(document).on("click","#btntodo", function(){
    } 
 });
 
-function listardatatable(tick_titulo,cat_id,prio_id/* ,est_id */){
+function listardatatable(tick_titulo,cat_id,prio_id,est_id){
     tabla=$('#ticket_data').dataTable({
         "aProcessing": true,
         "aServerSide": true,
@@ -334,7 +334,7 @@ function listardatatable(tick_titulo,cat_id,prio_id/* ,est_id */){
             url: '../../controller/ticket.php?op=listar_filtro',
             type : "post",
             dataType : "json",
-            data:{ tick_titulo:tick_titulo,cat_id:cat_id,prio_id:prio_id/* ,est_id:est_id */},
+            data:{ tick_titulo:tick_titulo,cat_id:cat_id,prio_id:prio_id,est_id:est_id},
             error: function(e){
                 console.log(e.responseText);
             }
