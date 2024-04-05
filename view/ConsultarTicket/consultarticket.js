@@ -316,7 +316,7 @@ $(document).on("click","#btntodo", function(){
    } 
 });
 
-function listardatatable(tick_titulo,cat_id,prio_id,est_id){
+function listardatatable(tick_titulo,cat_id,prio_id){
     tabla=$('#ticket_data').dataTable({
         "aProcessing": true,
         "aServerSide": true,

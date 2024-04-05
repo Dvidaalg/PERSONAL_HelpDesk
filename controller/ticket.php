@@ -399,14 +399,14 @@
                 $sub_array[] = '<button type="button" onClick="ver('.$row["tick_id"].');"  id="'.$row["tick_id"].'" class="btn btn-inline btn-primary btn-sm ladda-button">Ver ticket</button>';
                 $data[] = $sub_array;
             }
-
             $results = array(
-                "sEcho"=>1,
-                "iTotalRecords"=>count($data), 
-                "iTotalDisplayRecords"=>count($data),
-                "aaData"=>$data);
+                "sEcho" => 1,
+                "iTotalRecords" => count($data),
+                "iTotalDisplayRecords" => count($data),
+                "aaData" => $data
+            );
             echo json_encode($results);
-            break; 
+            break;
 
         case "listardetalle":
             $datos=$ticket->listar_ticketdetalle_x_ticket($_POST["tick_id"]);
